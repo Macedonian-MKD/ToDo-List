@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Листа на обврски</title>
+</head>
+<body>
+    <div class="container">
+
+        <header class="text-center text-light my-4"> 
+
+            <h1 class="mb-4" > Листа со обврски </h1> <!-- margin botom so sila 4-->
+            <form class="search">  <!-- nasha klasa search-->
+
+                <input class="form-control m-auto" type="text" name="search" placeholder="Додади нова обврска"/>
+                <!--ova se bootstrap klasi za stil -->
+
+            </form>
+        </header>
+        <ul class="list-group todos mx-auto text-light"> <!-- prvata klasa ke nanese stil na listata taa e bootstap klasa, vtorata e nasha klasa, potoa tretata e margin po x oskata auto, i poslednata e za boja na tekstot-->
+            <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- sekoj li kje bide edna obvrska-->
+              <span>Играње шах</span><!-- prvata list-group klasa e za stil na itemite,vtorata e display flex, i potoa go prilagoduvame na centar toa znaci ke bidat prikazani so podednakov prostor-->
+              <i class="far fa-trash-alt delete"></i> <!-- ovie <i> tagovi se za fontaweome, mora da se koristat ako sakame fontawseome, vo niv stavame klasa za kanta, toa go najdovme na fontawesome vo search samo pises trash i ti ispadnat nogu varijanti-->
+            </li> <!-- isto taka imame i nasha klasa delete koja ke ja koristeme za brisenje-->
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <span>Одење во теретана</span>
+              <i class="far fa-trash-alt delete"></i>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <span>Учење германски јазик</span>
+              <i class="far fa-trash-alt delete"></i>
+            </li>
+          </ul>
+          <form class="add text-center my-4"> <!-- add e nasha klasa koja ke ja koristeme vo JS , text-center e za centriranje i margin po y oskata so strenght 4-->
+            <label class="text-light">Додади нова обврска</label>
+            <input class="form-control m-auto" type="text" name="add" /> 
+            <!-- Ne ni treba Submit button , samo pretiskame enter vo ovaa labela i tolku-->
+          </form>
+    </div>
+<footer>
+    <p>Автор :</p> <p>Александро Миленков &copy;</p>
+</footer>
+    <script src="app.js"></script>  
+</body>
+</html>
